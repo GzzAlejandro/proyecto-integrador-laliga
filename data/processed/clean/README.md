@@ -1,8 +1,8 @@
-# 📁 Processed Data - European Soccer Database
+#  Processed Data - European Soccer Database
 
 Este directorio contiene los datasets procesados y limpios, listos para la fase de modelado predictivo y aprendizaje no supervisado (K-Means). Los datos originales han sido extraídos, transformados y validados enfocándose exclusivamente en los registros de La Liga.
 
-## 🗂️ Diccionario de Archivos
+##  Diccionario de Archivos
 
 | Archivo CSV | Descripción de los Datos | Transformaciones Destacadas | 
 | ----- | ----- | ----- | 
@@ -12,7 +12,7 @@ Este directorio contiene los datasets procesados y limpios, listos para la fase 
 | `Team_Clean.csv` | Catálogo de equipos de La Liga. | Auditoría de integridad (cero nulos o nombres faltantes). | 
 | `Team_Attributes_Clean.csv` | Atributos tácticos por temporada. | Eliminación de variables de texto redundantes (etiquetas terminadas en `Class`). | 
 
-## 🛠️ Tratamiento de Datos (EDA & Data Cleaning)
+##  Tratamiento de Datos (EDA & Data Cleaning)
 
 Para garantizar la viabilidad matemática de los algoritmos de Machine Learning y evitar la propagación de ruido, se implementaron las siguientes lógicas de limpieza:
 
@@ -24,16 +24,11 @@ Para garantizar la viabilidad matemática de los algoritmos de Machine Learning 
   2. Mediana global de la liga (si el jugador no tenía historial previo).
 
 * **Feature Selection:**
-  Las columnas de esfuerzo (`attacking_work_rate`, `defensive_work_rate`) fueron eliminadas de la matriz final. Su alta proporción de texto corrupto y naturaleza categórica introducían ruido innecesario para los cálculos de distancias euclidianas requeridos por el modelo K-Means.
+* Las columnas de esfuerzo (`attacking_work_rate`, `defensive_work_rate`) fueron eliminadas de la matriz final. Su alta proporción de texto corrupto y naturaleza categórica introducían ruido innecesario para los cálculos de distancias euclidianas requeridos por el modelo K-Means.
 
 * **Integridad Temporal:**
-  Se determinó que las evaluaciones tácticas deben analizarse estrictamente por temporada (evitando promedios globales) debido a la alta volatilidad temporal del simulador de EA Sports.
+*  Se determinó que las evaluaciones tácticas deben analizarse estrictamente por temporada (evitando promedios globales) debido a la alta volatilidad del simulador de EA Sports.
 
-## 🚀 Próximos Pasos
-
-* \[ \] Escalamiento y normalización de variables numéricas.
-
-* \[ \] Análisis de correlación de variables.
 
 * \[ \] Implementación y entrenamiento del modelo **K-Means**.
 
