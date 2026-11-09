@@ -29,7 +29,3 @@ Para garantizar la viabilidad matemática de los algoritmos de Machine Learning 
 * **Integridad Temporal:**
 *  Se determinó que las evaluaciones tácticas deben analizarse estrictamente por temporada (evitando promedios globales) debido a la alta volatilidad del simulador de EA Sports.
 
-
-* \[ \] Implementación y entrenamiento del modelo **K-Means**.
-
-* \[ \] Evaluación de métricas (Método del Codo, Coeficiente de Silueta).
