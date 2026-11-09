@@ -11,7 +11,7 @@ Este proyecto tiene el objetivo de demostrar que la ciencia de datos en el CUGDL
 ## 📌 Fases de Desarrollo y Entregables
 
 - [x] **Fase 1:** Extracción, limpieza y normalización de la base de datos (Pandas).
-- [ ] **Fase 2:** Análisis Exploratorio de Datos (EDA) y correlación de variables.
+- [x] **Fase 2:** Análisis Exploratorio de Datos (EDA) y correlación de variables.
 - [ ] **Fase 3:** Modelado de Machine Learning (Regresión Logística y Random Forest).
 - [ ] **Fase 4:** Diseño del Dashboard interactivo (Visualización de datos).
 - [ ] **Fase 5:** Redacción del Reporte Técnico (Desarrollo matemático, métricas y evaluaciones).
