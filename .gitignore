@@ -2,3 +2,5 @@
 .ipynb_checkpoints/
 __pycache__/
 !data/processed/*.csv
+!data/processed/clean/
+!data/processed/clean/*
