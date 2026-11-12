@@ -72,7 +72,7 @@ proyecto-integrador-laliga/
 | `02_Bases_de_datos_La_liga` / `02.1_Diccionario_valores_nulos` | Filtrado a La Liga y análisis de valores nulos. |
 | `03_validacion_y_diccionario_de_datos` | Validación de integridad y diccionario global de variables. |
 | `04_ExploracionDeDatos` | Análisis Exploratorio de Datos (EDA). |
-| `05_clasificacion_de_jugadores` | Agrupamiento de jugadores (K-Means). |
+| `05_clasificacion_de_jugadores` | Agrupamiento de jugadores. |
 | `06_predictor_de_partidos` | Primera versión del predictor y comparación contra cuotas de apuestas. |
 | `07_Analisis_de_datos_la_liga_clean` / `07_exploracion_base_de_datos` | Análisis de goles y exploración de las tablas limpias. |
 | `08_EDA_limpieza` | Limpieza y EDA de la base de datos de FBref. |
@@ -88,8 +88,6 @@ El pipeline de `09_ML_Final.ipynb` trabaja sobre los datos de FBref:
 3. **Comparación de modelos:** Naive Bayes, Regresión Logística, Árbol de Decisión, Random Forest y XGBoost, evaluados con Accuracy, Precision, Recall y F1 macro.
 4. **Probabilidades calibradas:** clasificación multiclase (Local / Empate / Visitante) con probabilidades calibradas (Log Loss y Brier score).
 5. **Simulación Monte Carlo:** se simulan los partidos pendientes de la temporada en curso para estimar puntos esperados y la probabilidad de cada equipo de ser **campeón**, clasificar a **Champions** o **descender**.
-
-Además, en `comparisons/Auditoria_ML_vs_CasasApuestas.csv` se contrastan las probabilidades del modelo con las cuotas de Bet365, Interwetten, William Hill y VC Bet.
 
 ## 📌 Fases de Desarrollo y Entregables
 
