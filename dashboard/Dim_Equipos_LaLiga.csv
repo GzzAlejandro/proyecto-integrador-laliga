@@ -1,42 +1,42 @@
 ﻿Equipo_ID,Squad,imagen,color_principal,color_secundario
-1,Alavés,https://upload.wikimedia.org/wikipedia/en/2/2e/Deportivo_Alaves_logo.png,#00529C,#FFFFFF
-2,Almería,https://upload.wikimedia.org/wikipedia/en/3/30/UD_Almer%C3%ADa_logo.png,#E20613,#FFFFFF
-3,Athletic Club,https://upload.wikimedia.org/wikipedia/en/9/98/Club_Athletic_Bilbao_logo.png,#EE2523,#000000
-4,Atlético Madrid,https://upload.wikimedia.org/wikipedia/en/f/f4/Atletico_Madrid_2017_logo.png,#CB3524,#02255E
-5,Barcelona,https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.png,#004D98,#A50044
-6,Celta Vigo,https://upload.wikimedia.org/wikipedia/en/1/12/RC_Celta_de_Vigo_logo.png,#8EBEED,#FFFFFF
-7,Cádiz,https://upload.wikimedia.org/wikipedia/en/5/58/C%C3%A1diz_CF_logo.png,#FCE800,#00529F
-8,Córdoba,https://upload.wikimedia.org/wikipedia/en/b/ba/C%C3%B3rdoba_CF_logo.png,#007A33,#FFFFFF
-9,Dep. La Coruña,https://upload.wikimedia.org/wikipedia/en/4/4e/RC_Deportivo_La_Coru%C3%B1a_logo.png,#00529F,#FFFFFF
-10,Eibar,https://upload.wikimedia.org/wikipedia/en/3/3b/SD_Eibar_logo.png,#00508F,#A50044
-11,Elche,https://upload.wikimedia.org/wikipedia/en/2/22/Elche_CF_logo.png,#007A33,#FFFFFF
-12,Espanyol,https://upload.wikimedia.org/wikipedia/en/d/d6/Rcd_espanyol_logo.png,#007FC8,#FFFFFF
-13,Getafe,https://upload.wikimedia.org/wikipedia/en/4/46/Getafe_logo.png,#005AA5,#FFFFFF
-14,Gimnàstic,https://upload.wikimedia.org/wikipedia/en/9/97/Gimn%C3%A0stic_de_Tarragona_logo.png,#E30613,#000000
-15,Girona,https://upload.wikimedia.org/wikipedia/en/9/90/Girona_FC_logo.png,#E20613,#FFFFFF
-16,Granada,https://upload.wikimedia.org/wikipedia/en/9/9a/Granada_CF_logo.png,#C8102E,#FFFFFF
-17,Huesca,https://upload.wikimedia.org/wikipedia/en/f/f5/SD_Huesca_logo.png,#00508F,#A50044
-18,Hércules,https://upload.wikimedia.org/wikipedia/en/4/4a/H%C3%A9rcules_CF_logo.png,#00529F,#FFFFFF
-19,Las Palmas,https://upload.wikimedia.org/wikipedia/en/2/20/UD_Las_Palmas_logo.png,#FDD200,#005DAA
-20,Leganés,https://upload.wikimedia.org/wikipedia/en/4/44/CD_Leganes_logo.png,#00529F,#FFFFFF
-21,Levante,https://upload.wikimedia.org/wikipedia/en/7/7b/Levante_UD_logo.png,#A50044,#00529F
-22,Mallorca,https://upload.wikimedia.org/wikipedia/en/e/e0/Rcd_mallorca.png,#E30613,#000000
-23,Málaga,https://upload.wikimedia.org/wikipedia/en/e/ed/M%C3%A1laga_CF_logo.png,#00A1E4,#FFFFFF
-24,Numancia,https://upload.wikimedia.org/wikipedia/en/0/05/CD_Numancia_logo.png,#E20613,#00529F
-25,Osasuna,https://upload.wikimedia.org/wikipedia/en/c/ca/CA_Osasuna_logo.png,#D11241,#0A346F
-26,Oviedo,https://upload.wikimedia.org/wikipedia/en/2/23/Real_Oviedo_logo.png,#00529F,#FFFFFF
-27,Racing Sant,https://upload.wikimedia.org/wikipedia/en/b/bf/Racing_de_Santander_logo.png,#007A33,#FFFFFF
-28,Rayo Vallecano,https://upload.wikimedia.org/wikipedia/en/1/17/Rayo_Vallecano_logo.png,#FFFFFF,#E30613
-29,Real Betis,https://upload.wikimedia.org/wikipedia/en/1/13/Real_betis_logo.png,#0BB363,#FFFFFF
-30,Real Madrid,https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.png,#FFFFFF,#00529F
-31,Real Murcia,https://upload.wikimedia.org/wikipedia/en/f/f3/Real_Murcia_logo.png,#E30613,#FFFFFF
-32,Real Sociedad,https://upload.wikimedia.org/wikipedia/en/f/f1/Real_Sociedad_logo.png,#0067B1,#FFFFFF
-33,Recreativo,https://upload.wikimedia.org/wikipedia/en/3/36/Recreativo_de_Huelva_logo.png,#00529F,#FFFFFF
-34,Sevilla,https://upload.wikimedia.org/wikipedia/en/3/3b/Sevilla_FC_logo.png,#FFFFFF,#D50032
-35,Sporting Gijón,https://upload.wikimedia.org/wikipedia/en/e/e4/Sporting_de_Gij%C3%B3n_logo.png,#E20613,#FFFFFF
-36,Tenerife,https://upload.wikimedia.org/wikipedia/en/5/5c/CD_Tenerife_logo.png,#00529F,#FFFFFF
-37,Valencia,https://upload.wikimedia.org/wikipedia/en/c/ce/Valenciacf.png,#FFFFFF,#FF7900
-38,Valladolid,https://upload.wikimedia.org/wikipedia/en/6/6e/Real_Valladolid_Logo.png,#5D2B7E,#FFFFFF
-39,Villarreal,https://upload.wikimedia.org/wikipedia/en/7/70/Villarreal_CF_logo.png,#FCE800,#00508F
-40,Xerez,https://upload.wikimedia.org/wikipedia/en/f/fc/Xerez_CD_logo.png,#00529F,#FFFFFF
-41,Zaragoza,https://upload.wikimedia.org/wikipedia/en/3/39/Real_Zaragoza_logo.png,#00529F,#FFFFFF
+1,Alavés,https://tmssl.akamaized.net/images/wappen/head/1108.png,#00529C,#FFFFFF
+2,Almería,https://tmssl.akamaized.net/images/wappen/head/3302.png,#E20613,#FFFFFF
+3,Athletic Club,https://tmssl.akamaized.net/images/wappen/head/621.png,#EE2523,#000000
+4,Atlético Madrid,https://tmssl.akamaized.net/images/wappen/head/13.png,#CB3524,#02255E
+5,Barcelona,https://tmssl.akamaized.net/images/wappen/head/131.png,#004D98,#A50044
+6,Celta Vigo,https://tmssl.akamaized.net/images/wappen/head/940.png,#8EBEED,#FFFFFF
+7,Cádiz,https://tmssl.akamaized.net/images/wappen/head/2687.png,#FCE800,#00529F
+8,Córdoba,https://tmssl.akamaized.net/images/wappen/head/993.png,#007A33,#FFFFFF
+9,Dep. La Coruña,https://tmssl.akamaized.net/images/wappen/head/897.png,#00529F,#FFFFFF
+10,Eibar,https://tmssl.akamaized.net/images/wappen/head/1533.png,#00508F,#A50044
+11,Elche,https://tmssl.akamaized.net/images/wappen/head/1531.png,#007A33,#FFFFFF
+12,Espanyol,https://tmssl.akamaized.net/images/wappen/head/714.png,#007FC8,#FFFFFF
+13,Getafe,https://tmssl.akamaized.net/images/wappen/head/3709.png,#005AA5,#FFFFFF
+14,Gimnàstic,https://tmssl.akamaized.net/images/wappen/head/5648.png,#E30613,#000000
+15,Girona,https://tmssl.akamaized.net/images/wappen/head/12321.png,#E20613,#FFFFFF
+16,Granada,https://tmssl.akamaized.net/images/wappen/head/16795.png,#C8102E,#FFFFFF
+17,Huesca,https://tmssl.akamaized.net/images/wappen/head/5358.png,#00508F,#A50044
+18,Hércules,https://tmssl.akamaized.net/images/wappen/head/7971.png,#00529F,#FFFFFF
+19,Las Palmas,https://tmssl.akamaized.net/images/wappen/head/472.png,#FDD200,#005DAA
+20,Leganés,https://tmssl.akamaized.net/images/wappen/head/1244.png,#00529F,#FFFFFF
+21,Levante,https://tmssl.akamaized.net/images/wappen/head/3368.png,#A50044,#00529F
+22,Mallorca,https://tmssl.akamaized.net/images/wappen/head/237.png,#E30613,#000000
+23,Málaga,https://tmssl.akamaized.net/images/wappen/head/1084.png,#00A1E4,#FFFFFF
+24,Numancia,https://tmssl.akamaized.net/images/wappen/head/2296.png,#E20613,#00529F
+25,Osasuna,https://tmssl.akamaized.net/images/wappen/head/331.png,#D11241,#0A346F
+26,Oviedo,https://tmssl.akamaized.net/images/wappen/head/2497.png,#00529F,#FFFFFF
+27,Racing Sant,https://tmssl.akamaized.net/images/wappen/head/630.png,#007A33,#FFFFFF
+28,Rayo Vallecano,https://tmssl.akamaized.net/images/wappen/head/367.png,#FFFFFF,#E30613
+29,Real Betis,https://tmssl.akamaized.net/images/wappen/head/150.png,#0BB363,#FFFFFF
+30,Real Madrid,https://tmssl.akamaized.net/images/wappen/head/418.png,#FFFFFF,#00529F
+31,Real Murcia,https://tmssl.akamaized.net/images/wappen/head/171.png,#E30613,#FFFFFF
+32,Real Sociedad,https://tmssl.akamaized.net/images/wappen/head/681.png,#0067B1,#FFFFFF
+33,Recreativo,https://tmssl.akamaized.net/images/wappen/head/2867.png,#00529F,#FFFFFF
+34,Sevilla,https://tmssl.akamaized.net/images/wappen/head/368.png,#FFFFFF,#D50032
+35,Sporting Gijón,https://tmssl.akamaized.net/images/wappen/head/2448.png,#E20613,#FFFFFF
+36,Tenerife,https://tmssl.akamaized.net/images/wappen/head/648.png,#00529F,#FFFFFF
+37,Valencia,https://tmssl.akamaized.net/images/wappen/head/1049.png,#FFFFFF,#FF7900
+38,Valladolid,https://tmssl.akamaized.net/images/wappen/head/366.png,#5D2B7E,#FFFFFF
+39,Villarreal,https://tmssl.akamaized.net/images/wappen/head/1050.png,#FCE800,#00508F
+40,Xerez,https://tmssl.akamaized.net/images/wappen/head/134.png,#00529F,#FFFFFF
+41,Zaragoza,https://tmssl.akamaized.net/images/wappen/head/142.png,#00529F,#FFFFFF
