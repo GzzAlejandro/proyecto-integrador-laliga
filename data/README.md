@@ -15,10 +15,10 @@ data/
 └── fbref/                       → Datos de FBref (2006/07 – 2026/27)
     ├── partidos/  equipos/  jugadores/  tabla general/   → Un CSV por temporada
     └── processed/               → Consolidado histórico (notebook 07)
-        └── clean/               → Versión limpia usada por el modelo final (notebook 08)*
+        └── clean/               → Tablas limpias y predicciones ML para Power BI (notebooks 08 y 09)
 ```
 
-\* *Se genera localmente; no está en GitHub (ver más abajo).*
+*Las tablas dimensionales del tablero (`Dim_Equipos_LaLiga.csv` y `Dim_Temporada.csv`) y el modelo en estrella se documentan en [`../dashboard/README.md`](../dashboard/README.md).*
 
 ## 1. European Soccer Database (2008/09 – 2015/16)
 
@@ -43,19 +43,19 @@ Base de datos relacional publicada en [Kaggle](https://www.kaggle.com/datasets/h
 | --- | --- | --- |
 | Por temporada | `fbref/partidos/`, `fbref/equipos/`, `fbref/jugadores/`, `fbref/tabla general/` | Descarga manual desde FBref |
 | Consolidado | `fbref/processed/*_historico_completo.csv` | `07_exploracion_base_de_datos` |
-| Limpio | `fbref/processed/clean/*_historico_limpio.csv` | `08_EDA_limpieza` |
+| Limpio | `fbref/processed/clean/*_historico_limpio.csv`, `partidos_por_equipo_limpio.csv` | `08_EDA_limpieza` |
+| Predicciones ML / Monte Carlo | `fbref/processed/clean/Predicciones_MonteCarlo_2026.csv`, `Predicciones_Partidos_2026.csv` | `09_ML_Final` |
 
 📄 La descripción de cada carpeta y sus columnas está en [`fbref/README.md`](fbref/README.md).
 
 ## ¿Por qué hay dos fuentes?
 
-El primer predictor de partidos (notebook 06) se construyó con la European Soccer Database, pero esta base **termina en 2016** y no permite predecir temporadas actuales. Por eso el **modelo final** (notebook 09) se construyó con FBref, que tiene 20 temporadas más y la temporada en curso. La European Soccer Database sigue siendo la fuente del **KNN de posiciones** (notebook 05), porque es la única que tiene los atributos FIFA de los jugadores.
+El primer predictor de partidos (notebook 06) se construyó con la European Soccer Database, pero esta base **termina en 2016** y no permite predecir temporadas actuales. Por eso el **modelo final** (notebook 09) y el **dashboard en Power BI** se construyeron con FBref, que tiene 21 temporadas y la temporada en curso. La European Soccer Database sigue siendo la fuente del **KNN de posiciones** (notebook 05), porque es la única que tiene los atributos FIFA de los jugadores.
 
 ## ⚠️ Archivos que no están en GitHub
 
-El `.gitignore` excluye todos los `.csv` excepto los de `data/processed/` y `data/processed/clean/` (y los de FBref que ya estaban en el repositorio). Por eso, al clonar el proyecto, **faltan**:
+Los archivos procesados de `data/processed/`, `data/processed/clean/`, `data/fbref/processed/clean/` y `dashboard/*.csv` **sí están en GitHub**. El `.gitignore` excluye únicamente los CSV crudos de Kaggle y copias intermedias fuera de esas rutas:
 
 | Archivo(s) | Cómo obtenerlos |
 | --- | --- |
 | `raw/Match.csv`, `raw/Player.csv`, `raw/Team.csv`, etc. | Descomprime `raw/database.sqlite.zip` y exporta cada tabla de la base SQLite a CSV. |
-| `fbref/processed/clean/*_historico_limpio.csv` | Ejecuta el notebook `08_EDA_limpieza`. |

@@ -3,7 +3,7 @@
 Datos de La Liga descargados de [FBref](https://fbref.com/), un sitio público de estadísticas de fútbol. Cada carpeta tiene **un archivo CSV por temporada**, y `processed/` tiene todas las temporadas unidas.
 
 > [!NOTE]
-> La temporada 2026/27 **está en curso**: sus partidos pendientes aparecen sin marcador, y son los que el notebook 09 simula con Monte Carlo.
+> La temporada 2026/27 **está en curso**: sus `260` partidos pendientes aparecen sin marcador en los datos históricos y son los que el notebook 09 simula con Monte Carlo y muestra el dashboard en Power BI.
 
 ## 📁 Carpetas
 
@@ -14,18 +14,22 @@ Datos de La Liga descargados de [FBref](https://fbref.com/), un sitio público d
 | `jugadores/` | Estadísticas individuales | `jugadores06.csv` … `jugadores26.csv` | un jugador en un equipo y una temporada |
 | `tabla general/` | Clasificación de la liga | `tabla0607.csv` … `tabla2627.csv` | un equipo en una temporada |
 | `processed/` | Las cuatro tablas anteriores con todas las temporadas unidas (notebook 07) | `*_historico_completo.csv` | igual que su tabla de origen |
-| `processed/clean/` | Versión limpia usada por los notebooks 09 y 10 (notebook 08, no está en GitHub) | `*_historico_limpio.csv` | igual que su tabla de origen |
+| `processed/clean/` | Versión limpia (notebook 08) y predicciones ML (notebook 09) listas para Power BI | `*_historico_limpio.csv`, `partidos_por_equipo_limpio.csv`, `Predicciones_MonteCarlo_2026.csv`, `Predicciones_Partidos_2026.csv` | tablas analíticas y salidas predictivas |
 
 **Nomenclatura de temporadas:** `partidos2006.csv`, `statsgenerales06.csv`, `jugadores06.csv` y `tabla0607.csv` corresponden a la misma temporada, **2006/07**. En los archivos consolidados la columna `Temporada` identifica el año.
 
-## 📈 Volumen del consolidado
+## 📈 Volumen del consolidado y limpio
 
-| Archivo | Registros aprox. |
+| Archivo | Registros aprox. / exactos |
 | --- | --- |
-| `partidos_historico_completo.csv` | ~7,980 partidos |
-| `jugadores_historico_completo.csv` | ~11,760 registros jugador-temporada |
-| `equipos_historico_completo.csv` | ~420 registros equipo-temporada |
-| `tabla_general_historico_completo.csv` | ~420 registros equipo-temporada |
+| `partidos_historico_completo.csv` | ~7,980 partidos (incluye `260` pendientes de `2026/27`) |
+| `processed/clean/partidos_historico_limpio.csv` | `7,720` partidos jugados |
+| `processed/clean/partidos_por_equipo_limpio.csv` | `15,440` filas equipo-partido (`7,720 × 2`) |
+| `processed/clean/jugadores_historico_limpio.csv` | `11,765` registros jugador-temporada |
+| `processed/clean/equipos_historico_limpio.csv` | `420` registros equipo-temporada |
+| `processed/clean/tabla_general_historico_limpio.csv` | `420` registros equipo-temporada |
+| `processed/clean/Predicciones_MonteCarlo_2026.csv` | `20` equipos proyectados (`2026/27`) |
+| `processed/clean/Predicciones_Partidos_2026.csv` | `260` partidos pendientes (`2026/27`) |
 
 ## 📖 Diccionario de columnas
 
@@ -48,7 +52,7 @@ Datos de La Liga descargados de [FBref](https://fbref.com/), un sitio público d
 | Columna | Significado |
 | --- | --- |
 | `Squad` | Equipo. |
-| `Player`, `Nation`, `Pos`, `Born` | *Solo jugadores:* nombre, nacionalidad, posición y año de nacimiento. |
+| `Player`, `Nation`, `Pos`, `Born` | *Solo jugadores:* nombre, nacionalidad, posición y año de nacimiento (`Pos_Principal` en la versión limpia). |
 | `# Pl` | *Solo equipos:* número de jugadores utilizados. |
 | `Age` | Edad (promedio en el caso de equipos). |
 | `Poss` | *Solo equipos:* posesión promedio (%). |
@@ -61,7 +65,7 @@ Datos de La Liga descargados de [FBref](https://fbref.com/), un sitio público d
 | `G-PK` | Goles sin contar penales. |
 | `PK` / `PKatt` | Penales anotados / intentados. |
 | `CrdY` / `CrdR` | Tarjetas amarillas / rojas. |
-| `Gls.1`, `Ast.1`, `G+A.1`, `G-PK.1`, `G+A-PK` | Las mismas métricas **por cada 90 minutos**. En la versión limpia se renombran con el sufijo `_per90`. |
+| `Gls.1`, `Ast.1`, `G+A.1`, `G-PK.1`, `G+A-PK` | Las mismas métricas **por cada 90 minutos**. En la versión limpia de equipos se renombran con el sufijo `_per90`. |
 
 ### Tabla general
 

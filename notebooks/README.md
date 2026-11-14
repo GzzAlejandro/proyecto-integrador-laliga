@@ -25,9 +25,12 @@ flowchart TD
         R2["data/fbref/ (CSV por temporada)"] --> N07B["07 Consolidación FBref"]
         N07B --> P2["data/fbref/processed/*_historico_completo.csv"]
         P2 --> N08["08 EDA y limpieza FBref"]
-        N08 --> C2["data/fbref/processed/clean/*_historico_limpio.csv"]
+        N08 --> C2["data/fbref/processed/clean/*_limpio.csv"]
         C2 --> N09["09 ML Final + Monte Carlo"]
+        N09 --> PR["Predicciones_MonteCarlo_2026.csv<br/>Predicciones_Partidos_2026.csv"]
         C2 --> N10["10 Correlaciones"]
+        C2 --> PBI["Dashboard Power BI<br/>(dashboard/Dashboard_LaLiga.pbix)"]
+        PR --> PBI
     end
     N06 -. "decisión: cambiar de base de datos" .-> N09
 ```
@@ -52,8 +55,8 @@ flowchart TD
 | Notebook | ¿Qué hace? | Lee | Genera |
 | --- | --- | --- | --- |
 | [`07_exploracion_base_de_datos`](07_exploracion_base_de_datos.ipynb) | **Consolida** los CSV de FBref de cada temporada en una sola tabla histórica por tipo (partidos, equipos, jugadores, tabla general) y corrige la codificación UTF-8 para Power BI. | `data/fbref/<carpeta>/*.csv` | `data/fbref/processed/*_historico_completo.csv` |
-| [`08_EDA_limpieza`](08_EDA_limpieza.ipynb) | Limpieza y EDA de FBref: tipos de datos, marcador separado en goles y puntos, nombres de columnas. | `*_historico_completo.csv` | `data/fbref/processed/clean/*_historico_limpio.csv` |
-| [`09_ML_Final`](09_ML_Final.ipynb) | ⭐ **Modelo final.** Variables de forma reciente sin fuga de información, comparación de 5 modelos, calibración de probabilidades y **simulación Monte Carlo** de la temporada 2026/27. | `*_historico_limpio.csv` | — |
+| [`08_EDA_limpieza`](08_EDA_limpieza.ipynb) | Limpieza y EDA de FBref: tipos de datos, marcador separado en goles y puntos, nombres de equipos unificados, posición principal y tabla larga por equipo. | `*_historico_completo.csv` | `data/fbref/processed/clean/*_historico_limpio.csv`, `partidos_por_equipo_limpio.csv` |
+| [`09_ML_Final`](09_ML_Final.ipynb) | ⭐ **Modelo final.** Variables de forma reciente sin fuga de información, comparación de 5 modelos, calibración de probabilidades y **simulación Monte Carlo** de la temporada 2026/27. | `*_historico_limpio.csv` | `data/fbref/processed/clean/Predicciones_MonteCarlo_2026.csv`, `Predicciones_Partidos_2026.csv` |
 | [`10_Correlaciones`](10_Correlaciones.ipynb) | Mapas de calor de Pearson y ranking de las relaciones más fuertes entre las estadísticas de FBref. Es descriptivo: no entrena modelos. | `*_historico_limpio.csv` | — |
 
 ## ⚙️ Antes de ejecutar
@@ -62,7 +65,5 @@ flowchart TD
 - **Algunos notebooks se hicieron en Google Colab o en la computadora de un integrante** y tienen rutas fijas que hay que cambiar por la ruta relativa (`../data/processed/...`):
   - `02_Bases_de_datos_La_liga` y `02.1Diccionario_valores_nulos...` → `/content/drive/MyDrive/...`
   - `07_Analisis_de_datos_la_liga_clean` → `C:\Users\edgar\...`
-- **Archivos que no están en GitHub:** el `.gitignore` excluye la mayoría de los `.csv`. Para reproducir todo:
-  1. Descomprime `data/raw/database.sqlite.zip` y exporta sus tablas a CSV en `data/raw/` (necesario para el notebook 01).
-  2. Ejecuta `07_exploracion_base_de_datos` y después `08_EDA_limpieza` para generar los datos de FBref que usan los notebooks 09 y 10.
-- **La simulación del notebook 09 es pesada** (500,000 simulaciones). Para pruebas rápidas puedes bajar `n_simulaciones`.
+- **Archivos en GitHub vs. locales:** las tablas limpias de `data/fbref/processed/clean/*` y `data/processed/clean/*` **ya están en GitHub**, por lo que puedes ejecutar directamente `09_ML_Final` y `10_Correlaciones`. Si quieres re-ejecutar desde el notebook `01`, descomprime `data/raw/database.sqlite.zip` y exporta sus tablas a CSV en `data/raw/`.
+- **La simulación del notebook 09 es pesada** (`500,000` simulaciones). Para pruebas rápidas puedes bajar `n_simulaciones`.
